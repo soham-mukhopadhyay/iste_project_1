@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/OpenSans.TTF) format('truetype');
+  }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat.TTF) format('truetype');
+  }
+
+
+p {
+
+
+    font-family: 'Open Sans';
+    font-size: 18px;
+   
+   
+    }
+
+h1 {
+
+
+    font-family: 'Montserrat';
+    vertical-align: middle;
+    font-size: 22px;
+   
+    }
+
+
+h3 {
+
+
+    font-family: 'Open Sans';
+    font-size: 22px;
+   
+   
+    }
+
+a {
+
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+   
+   
+    }
+
+.input-field {
+  border: none;
+  padding: 5px;
+  font-family: 'Montserrat';
+  width: 300px;
+  color: grey;
+}
+
+
+.button {
+  border: none;
+  font-family: 'Montserrat';
+  color: whitesmoke;
+  background-color: #A91E55;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  transition: 0.3s;
+  margin: 0 auto;
+  float: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card .card-text{
+  padding: 2px 16px;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 100%;
+  gap: 0px 0px;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+    "wayback links";
+}
+.wayback { 
+  grid-area: wayback;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "tools"
+    "subscribe"
+    "snap";
+}
+.tools {
+  grid-area: tools;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe {
+  grid-area: tools;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.snap {
+  grid-area: tools;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
